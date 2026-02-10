@@ -17,15 +17,15 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { label: '철학', href: '#mission' },
-    { label: '서비스', href: '#products' },
-    { label: '연락처', href: '#footer' },
+    { label: 'Mission', href: '#mission' },
+    { label: 'Services', href: '#products' },
+    { label: 'Contact', href: '#footer' },
   ];
 
   const shipStats = [
-    { icon: Rocket, value: '12', label: '출시' },
-    { icon: Code2, value: '365', label: '일' },
-    { icon: Zap, value: '∞', label: '에너지' },
+    { icon: Rocket, value: '12', label: 'Launches' },
+    { icon: Code2, value: '365', label: 'Days' },
+    { icon: Zap, value: '∞', label: 'Energy' },
   ];
 
   // Prevent hydration mismatch
@@ -101,7 +101,7 @@ const Navigation = () => {
               <button
                 onClick={toggleTheme}
                 className="p-2 rounded-lg glass hover:bg-white/10 transition-colors group"
-                aria-label={theme === 'dark' ? '라이트 모드로 전환' : '다크 모드로 전환'}
+                aria-label={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
               >
                 {theme === 'dark' ? (
                   <Sun className="w-5 h-5 text-amber-400 group-hover:scale-110 transition-transform" />
@@ -176,12 +176,12 @@ const Navigation = () => {
             {theme === 'dark' ? (
               <>
                 <Sun className="w-5 h-5 text-amber-400" />
-                <span className="text-foreground">라이트 모드로 전환</span>
+                <span className="text-foreground">Light Mode</span>
               </>
             ) : (
               <>
                 <Moon className="w-5 h-5 text-indigo-500" />
-                <span className="text-foreground">다크 모드로 전환</span>
+                <span className="text-foreground">Dark Mode</span>
               </>
             )}
           </button>

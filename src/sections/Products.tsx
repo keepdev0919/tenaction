@@ -131,13 +131,13 @@ const Products = () => {
       beta: 'bg-neon-cyan/20 text-neon-cyan border-neon-cyan/30',
       building: 'bg-neon-purple/20 text-neon-purple border-neon-purple/30',
     };
-    
+
     const labels = {
       live: '운영 중',
       beta: '베타',
       building: '개발 중',
     };
-    
+
     return (
       <span className={`px-2 py-1 text-xs font-mono font-medium rounded border ${styles[status]}`}>
         {labels[status]}
@@ -146,32 +146,32 @@ const Products = () => {
   };
 
   return (
-    <section 
+    <section
       ref={sectionRef}
-      id="products" 
+      id="products"
       className="relative py-24 sm:py-32 overflow-hidden"
     >
       {/* Background */}
       <div className="absolute inset-0 grid-bg opacity-30" />
-      
+
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-6">
             <TrendingUp className="w-4 h-4 text-neon-green" />
-            <span className="text-xs font-mono text-muted-foreground">우리의 서비스</span>
+            <span className="text-xs font-mono text-muted-foreground">Our Services</span>
           </div>
-          
+
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            출시된 <span className="text-gradient">서비스들</span>
+            Launched <span className="text-gradient">Services</span>
           </h2>
-          
+
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             기록적인 시간 안에 아이디어를 현실로. 각 제품은 AI 기반 개발의
             강력함을 보여주는 증거입니다.
           </p>
         </div>
-        
+
         {/* Products Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((product, index) => (
@@ -182,7 +182,7 @@ const Products = () => {
             >
               {/* Card Background Gradient */}
               <div className={`absolute inset-0 bg-gradient-to-br ${product.bgGradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
-              
+
               {/* Card Content */}
               <div className="relative p-6">
                 {/* Header */}
@@ -192,7 +192,7 @@ const Products = () => {
                   </div>
                   {getStatusBadge(product.status)}
                 </div>
-                
+
                 {/* Title & Tagline */}
                 <h3 className="text-xl font-bold mb-1 group-hover:text-gradient transition-colors">
                   {product.name}
@@ -200,12 +200,12 @@ const Products = () => {
                 <p className={`text-sm font-mono ${product.color} mb-3`}>
                   {product.tagline}
                 </p>
-                
+
                 {/* Description */}
                 <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
                   {product.description}
                 </p>
-                
+
                 {/* Metrics */}
                 {product.metrics && (
                   <div className="flex gap-4 mb-4">
@@ -221,7 +221,7 @@ const Products = () => {
                     ))}
                   </div>
                 )}
-                
+
                 {/* Link */}
                 {product.link && (
                   <a
@@ -233,13 +233,13 @@ const Products = () => {
                   </a>
                 )}
               </div>
-              
+
               {/* Hover Border Effect */}
               <div className="absolute inset-0 rounded-2xl border border-transparent group-hover:border-neon-green/30 transition-colors pointer-events-none" />
             </div>
           ))}
         </div>
-        
+
         {/* Build Log Teaser */}
         <div className={`mt-16 transition-all duration-700 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <div className="glass rounded-2xl p-6 sm:p-8">
@@ -255,7 +255,7 @@ const Products = () => {
                   </p>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-6 font-mono text-sm">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-neon-green">6</div>

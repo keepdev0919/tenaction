@@ -16,8 +16,8 @@ const Footer = () => {
   };
 
   const socialLinks = [
+    { icon: Github, href: 'https://github.com/keepdev0919', label: 'GitHub' },
     { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Github, href: '#', label: 'GitHub' },
     { icon: Linkedin, href: '#', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:hello@tenaction.io', label: 'Email' },
   ];
@@ -34,7 +34,7 @@ const Footer = () => {
       {/* Background */}
       <div className="absolute inset-0 grid-bg opacity-20" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-neon-green/50 to-transparent" />
-      
+
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="grid lg:grid-cols-3 gap-12 mb-16">
@@ -49,12 +49,12 @@ const Footer = () => {
                 <p className="text-xs font-mono text-muted-foreground">1인 개발 스튜디오</p>
               </div>
             </div>
-            
+
             <p className="text-muted-foreground mb-6 max-w-sm">
               끈기와 끊임없는 실행력으로 만드는 AI 기반 서비스.
               빠르게 출시하고, 더 빠르게 배웁니다.
             </p>
-            
+
             {/* Social Links */}
             <div className="flex gap-3">
               {socialLinks.map((social) => (
@@ -69,7 +69,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          
+
           {/* Quick Links */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider mb-4 text-muted-foreground">
@@ -88,14 +88,14 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          
+
           {/* Contact */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider mb-4 text-muted-foreground">
               연락처
             </h4>
             <div className="space-y-3">
-              <a 
+              <a
                 href="mailto:hello@tenaction.io"
                 className="flex items-center gap-3 text-foreground hover:text-neon-green transition-colors"
               >
@@ -109,7 +109,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Business Info Section */}
         <div className="glass rounded-2xl p-6 sm:p-8 mb-12">
           <div className="flex items-center gap-2 mb-6">
@@ -118,7 +118,7 @@ const Footer = () => {
               사업자 정보
             </h4>
           </div>
-          
+
           <div className="grid sm:grid-cols-2 gap-6">
             {/* Left: Basic Info */}
             <div className="space-y-3">
@@ -129,7 +129,7 @@ const Footer = () => {
                   <p className="font-medium">{businessInfo.name}</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start gap-3">
                 <FileText className="w-4 h-4 text-muted-foreground mt-1" />
                 <div>
@@ -137,7 +137,7 @@ const Footer = () => {
                   <p className="font-mono text-sm">{businessInfo.registration}</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-muted-foreground mt-1" />
                 <div>
@@ -146,13 +146,13 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Right: Business Categories */}
             <div>
               <p className="text-sm text-muted-foreground mb-3">사업 분야</p>
               <ul className="space-y-2">
                 {businessInfo.businesses.map((business, index) => (
-                  <li 
+                  <li
                     key={index}
                     className="flex items-center gap-2 text-sm"
                   >
@@ -164,13 +164,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Bottom Bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-white/10">
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Tenaction. All rights reserved.
           </p>
-          
+
           <div className="flex items-center gap-2 text-xs font-mono text-muted-foreground">
             <span className="w-2 h-2 rounded-full bg-neon-green animate-pulse" />
             <span>시스템 정상 운영 중</span>
@@ -178,7 +178,7 @@ const Footer = () => {
             <span>v2.0.1</span>
           </div>
         </div>
-        
+
         {/* Easter Egg */}
         <div className="mt-8 text-center">
           <p className="text-xs text-muted-foreground/50 font-mono">
