@@ -23,7 +23,7 @@ const Navigation = () => {
   ];
 
   const shipStats = [
-    { icon: Rocket, value: '12', label: 'Launches' },
+    { icon: Rocket, value: '7', label: 'Launches' },
     { icon: Code2, value: '365', label: 'Days' },
     { icon: Zap, value: '∞', label: 'Energy' },
   ];

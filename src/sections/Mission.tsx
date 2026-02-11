@@ -26,20 +26,20 @@ const Mission = () => {
   const principles = [
     {
       icon: Timer,
-      title: '속도 우선',
-      description: '빠르게 출시하고, 더 빠르게 배운다. 모든 제품은 실험이다.',
+      title: 'Speed First',
+      description: 'Ship fast, learn faster. Every product is an experiment.',
       color: 'text-neon-green',
     },
     {
       icon: Cpu,
-      title: 'AI 네이티브',
-      description: 'AI로 개발하고, 인간을 위해. 자동화가 핵심이다.',
+      title: 'AI Native',
+      description: 'Built with AI, for humans. Automation is key.',
       color: 'text-neon-cyan',
     },
     {
       icon: Target,
-      title: '끈질김',
-      description: '끈기가 재능을 이긴다. 절대 멈추지 않는다.',
+      title: 'Tenacity',
+      description: 'Grit beats talent. Never stop moving.',
       color: 'text-neon-purple',
     },
   ];

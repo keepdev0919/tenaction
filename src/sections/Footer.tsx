@@ -1,25 +1,20 @@
-import { Terminal, Mail, Github, Twitter, Linkedin, MapPin, Building2, FileText, Briefcase } from 'lucide-react';
+import { Terminal, Mail, Github, Building2, FileText, Briefcase } from 'lucide-react';
 
 const Footer = () => {
   const businessInfo = {
     name: '테넥션 (Tenaction)',
-    representative: '대표: 김테넥션',
-    registration: '사업자등록번호: 123-45-67890',
-    address: '서울특별시 강남구 테헤란로 123, AI타워 10층',
+    registration: '760-02-03520',
+    businessTypes: '정보통신업, 도매 및 소매업, 전문·과학 및 기술서비스업',
     businesses: [
       '응용 소프트웨어 개발 및 공급업',
-      '전자상거래 소프트웨어 개발',
+      '전자상거래 소매 중개업',
       '광고 대행업',
-      '데이터베이스 및 온라인 정보 제공업',
-      'AI 및 머신러닝 솔루션 개발',
     ],
   };
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/keepdev0919', label: 'GitHub' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:hello@tenaction.io', label: 'Email' },
+    { icon: Mail, href: 'mailto:keepdev0919@gmail.com', label: 'Email' },
   ];
 
   const quickLinks = [
@@ -96,16 +91,12 @@ const Footer = () => {
             </h4>
             <div className="space-y-3">
               <a
-                href="mailto:hello@tenaction.io"
+                href="mailto:keepdev0919@gmail.com"
                 className="flex items-center gap-3 text-foreground hover:text-neon-green transition-colors"
               >
                 <Mail className="w-5 h-5 text-muted-foreground" />
-                hello@tenaction.io
+                keepdev0919@gmail.com
               </a>
-              <div className="flex items-start gap-3 text-muted-foreground">
-                <MapPin className="w-5 h-5 mt-0.5" />
-                <span>서울, 대한민국</span>
-              </div>
             </div>
           </div>
         </div>
@@ -139,10 +130,10 @@ const Footer = () => {
               </div>
 
               <div className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-muted-foreground mt-1" />
+                <Briefcase className="w-4 h-4 text-muted-foreground mt-1" />
                 <div>
-                  <p className="text-sm text-muted-foreground">주소</p>
-                  <p className="text-sm">{businessInfo.address}</p>
+                  <p className="text-sm text-muted-foreground">업태</p>
+                  <p className="text-sm">{businessInfo.businessTypes}</p>
                 </div>
               </div>
             </div>

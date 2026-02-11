@@ -20,7 +20,7 @@ const Hero = () => {
   }, []);
 
   const stats = [
-    { label: 'Launches', value: '12', suffix: '+', icon: Rocket },
+    { label: 'Launches', value: '7', suffix: '+', icon: Rocket },
     { label: 'Dev Days', value: '365', suffix: '+', icon: Code2 },
     { label: 'Coffee', value: '∞', suffix: '', icon: Zap },
   ];
@@ -72,7 +72,7 @@ const Hero = () => {
           >
             <span className="relative z-10 flex items-center gap-2">
               <Rocket className="w-5 h-5" />
-              서비스 둘러보기
+              Explore Services
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-neon-green to-neon-cyan opacity-0 group-hover:opacity-100 transition-opacity" />
           </a>
@@ -83,7 +83,7 @@ const Hero = () => {
           >
             <span className="flex items-center gap-2">
               <Code2 className="w-5 h-5 text-neon-cyan" />
-              철학 알아보기
+              Our Philosophy
             </span>
           </a>
         </div>
