@@ -52,13 +52,24 @@ const Products = () => {
     {
       id: 'evening-walk',
       name: '저녁산책',
-      tagline: '산책 일기',
-      description: '목적지 선택, 메이트와 함께 걷고, 경유지 질문에 답하며 목적지 포즈 사진으로 완성하는 나만의 산책 일기.',
+      tagline: '나만의 감성 산책 일기',
+      description: '목적지와 산책 메이트를 선택한 뒤, 경유지 질문에 답하고 포즈 사진으로 완성하는 나만의 산책 기록.',
       iconImage: '/images/products/evening_walk.webp',
       color: 'text-rose-400',
       bgGradient: 'from-rose-500/20 to-pink-500/20',
       status: 'live',
       link: 'https://app.litt.ly/page',
+    },
+    {
+      id: 'demon-slayer-health',
+      name: '귀살대 건강관리',
+      tagline: '거북목, 눈운동 프로그램',
+      description: '개발자의 거북목 예방 및 안구 건조증 방지를 위한 귀멸의 칼날 컨셉의 헬스 케어 프로그램.',
+      iconImage: '/images/products/demon_slayer_health.png',
+      color: 'text-emerald-400',
+      bgGradient: 'from-emerald-500/20 to-teal-500/20',
+      status: 'live',
+      link: 'https://github.com/keepdev0919/turtle-eye-slayer',
     },
   ];
 
