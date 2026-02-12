@@ -71,6 +71,17 @@ const Products = () => {
       status: 'live',
       link: 'https://github.com/keepdev0919/turtle-eye-slayer',
     },
+    {
+      id: 'style-lens',
+      name: 'StyleLens',
+      tagline: 'AI 퍼스널 스타일 분석',
+      description: '사진 업로드로 AI가 체형, 얼굴형, 피부톤을 분석하여 맞춤형 패션 추천과 스타일링 가이드를 제공하는 서비스.',
+      iconImage: '/images/products/style_lens.png',
+      color: 'text-purple-400',
+      bgGradient: 'from-purple-500/20 to-indigo-500/20',
+      status: 'live',
+      link: 'https://stylelens.store/',
+    },
   ];
 
   const getStatusBadge = (status: Product['status']) => {
